@@ -1,1 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/*  image */
+.img {
+  background-color: yellow;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>Beautiful View</h1>
+</div>
+<div class="row">
+    <div class="card">
+      <div class="img" style="height:630px;">
+        <img
+          src="images/View 1.jpg"
+          width="700"
+          height="600"   
+        >
+        </div>
+      
+  <div class="row">
+    <div class="card">
+      <div class="img" style="height:630px;">
+        <img
+          src="images/View 2.jpeg"
+          width="700"
+          height="600"   
+        >
+        </div>
+      
+  <br>
+  <div class="row">
+    <div class="card">
+      <div class="img" style="height:630px;">
+        <img
+          src="images/View 3.jpeg"
+          width="700"
+          height="600"   
+        >
+        </div>
+      
+  <br>
+  <div class="row">
+    <div class="card">
+      <div class="img" style="height:630px;">
+        <img
+          src="images/View 4.jpeg"
+          width="700"
+          height="600"   
+        >
+        </div>
+      
+  <br>
+  <div class="row">
+    <div class="card">
+      <div class="img" style="height:630px;">
+        <img
+          src="images/View 5.jpeg"
+          width="700"
+          height="600"   
+        >
+        </div>
+      
+  <br>
+  <div class="topnav">
+  <a href="index" style="float:right">Back to Menu</a>
+  </div>
+  </body>
+<html>
 
