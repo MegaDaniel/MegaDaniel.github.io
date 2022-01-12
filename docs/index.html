@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
 <style>
@@ -12,7 +11,6 @@ body {
   background: #f1f1f1;
 }
 
-/* Header/Blog Title */
 .header {
   padding: 30px;
   text-align: center;
@@ -23,13 +21,11 @@ body {
   font-size: 50px;
 }
 
-/* Style the top navigation bar */
 .topnav {
   overflow: hidden;
   background-color: #333;
 }
 
-/* Style the topnav links */
 .topnav a {
   float: left;
   display: block;
@@ -39,64 +35,41 @@ body {
   text-decoration: none;
 }
 
-/* Change color on hover */
 .topnav a:hover {
   background-color: #ddd;
   color: black;
 }
 
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {   
-  float: left;
-  width: 75%;
+.flex-container {
+  display: flex;
+  background-color: DodgerBlue;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px darkgray;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 25%;
-  background-color: #f1f1f1;
-  padding-left: 20px;
+.flex-container-wrap {
+  flex-wrap: wrap;
 }
-
-/*  image */
-.img {
-  background-color: lightblue;
-  width: 5%;
+.align-items-center {align-items: center;}
+.flex-container > div {
+  background-color: yellow;
+  margin: 10px;
   padding: 20px;
+  font-size: 30px;
+  border-radius: 10px;
 }
-
-/* Add a card effect for articles */
-.card {
-  background-color: white;
-  padding: 20px;
-  margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.div1{
+    float: center;
+    width :90%;
+    background-color: lightblue;
+    text-align: center;
 }
 
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
-    width: 100%;
-    padding: 0;
-  }
-}
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
-}
 </style>
 </head>
 <body>
@@ -112,18 +85,17 @@ body {
   <a href="Beautiful views">Beautiful views</a>
 </div>
 
-<div class="row">
-  <div class="leftcolumn">
-    <div class="card">
-      <h2>Weathering With You</h2>
-      <div class="img" style="height:630px;">
+<div class="flex-container flex-container-wrap">
+ <div class="div1">
         <img
           src="images/background.jpg"
-          width="650"
-          height="580"   
+          width="1200"
+          height="900"    
         >
-        </div>
-      <p>Movie poster</p>
-  <br>
-  </body>
+    <p>
+       Movie poster
+    </p>   
+ </div>
+</div>
+</body>
 <html>
