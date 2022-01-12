@@ -1,144 +1,148 @@
-<!DOCTYPE html>
 <html>
 <head>
 <style>
-* {
-  box-sizing: border-box;
+.bottom {
+  overflow: hidden;
+  background-color: orange;
+  padding: 14px 16px;
 }
-
-body {
-  font-family: Arial;
-  padding: 10px;
-  background: #f1f1f1;
-}
-
-/* Header/Blog Title */
 .header {
   padding: 30px;
   text-align: center;
-  background: white;
+  font-family: Arial;  
 }
-.topnav {
-  overflow: hidden;
-  background-color: #333;
+
+img:hover {opacity: 0.7;}
+.flex-container {
+  display: flex;
+  background-color: DodgerBlue;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px darkgray;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
 }
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+
+.flex-container-wrap {
+  flex-wrap: wrap;
 }
-/*  image */
-.img {
-  background-color: pink;
-  width: 5%;
+.align-items-center {align-items: center;}
+.flex-container > div {
+  background-color: yellow;
+  margin: 10px;
   padding: 20px;
+  font-size: 30px;
+  border-radius: 10px;
 }
-
-/* Add a card effect for articles */
-.card {
-  background-color: white;
-  padding: 20px;
-  margin-top: 20px;
+.div1{
+    float: left;
+    width :45%;
+    background-color: lightblue;
+    text-align: center;
 }
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.div2{
+    float: right;
+    width :45%;
+    background-color: purple;
+    text-align: center;
 }
-
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
-    width: 100%;
-    padding: 0;
-  }
+.div3{
+    float: left;
+    width :45%;
+    background-color: pink;
+    text-align: center;
 }
-
-</style>
+.div4{
+    float: right;
+    width :45%;
+    background-color: red;
+    text-align: center;
+}
+.div5{
+    float: right;
+    width :45%;
+    background-color: white;
+    text-align: center;
+}
+.div6{
+    float: light;
+    width :45%;
+    background-color: white;
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+</style> 
 </head>
-<body>
+<body> 
 <div class="header">
   <h1>Charactors</h1>
 </div>
-<div class="row">
-    <div class="card">
-      <div class="img" style="height:630px;">
+<div class="flex-container flex-container-wrap">
+ <div class="div1">
+    <a href=images/Hina.jpg target=“_blank”>
         <img
           src="images/Hina.jpg"
-          width="650"
-          height="580"   
+          width="500"
+          height="800"   
         >
-        </div>
-      <h2>Hina</h2>   
-      <p>Main chatactor.</p>
-      <br>
-      <p>A girl living in Tokyo with her little brother. She asked for jobs to earn money to live in Tokyo, but she was only fifteen so there's no much place giving her a job. With a special oppertunity she prey to let the forever rain to stop for a while, she was brought to sky and seeing the beautiful view of sunshine. After that she felt dizzy and when she woke up she was sleeping at a small temple and having the special power to make the rain stop for a while when she preys. The more time she use the power she will become part of nature and started to be transparent. The time she decide to the the forever rain stop she'll be brought back to sky and gone forever.</p>
-  <br>
-  <div class="row">
-    <div class="card">
-      <div class="img" style="height:630px;">
+    </a>
+    <h2>Hina</h2>   
+ </div>
+
+ <div class="div2"> 
+    <a href=La+ target=“_blank”>
         <img
           src="images/Hodaka.jpeg"
-          width="650"
-          height="580"   
+          width="500"
+          height="800"   
         >
-        </div>
-      <h2>Hodaka</h2>   
-      <p>Main chatactor.</p>
-      <br>
-      <p>A boy who ran out from his city to Tokyo , because he felt exhausted living in his own place. When he is starving due to drinking a cup of soup as his dinner for three days , he met Hina , giving him a free hamburger. To show his appreciation he decided to help Hina when she was in trouble. They use Hina's special power to earn money for living. When Hina told him that she is going to disappear , Hodaka feels regret and try his best to bring Hina Back.</p>
-  <br>
-  <div class="row">
-    <div class="card">
-      <div class="img" style="height:630px;">
+    </a>
+    <h2>Hodaka</h2>    
+ </div>
+ <div class="div3"> 
+    <a href=Koroyi target=“_blank”>
         <img
           src="images/Ododo.jpg"
-          width="650"
-          height="580"   
+          width="500"
+          height="800"   
         >
-        </div>
-      <h2>Negi</h2> 
-      <br>
-      <p>Normal chatactor represent kids</p>  
-      <p>Hina's little brother , a boy who always make his classmate happy. Everybody in his class likes to play with him, all the girls in his class want to be his girlfriend. he is also a love expert, he easily knows that Hodaka loves his sister Hina.</p>
-  <br>
-  <div class="row">
-    <div class="card">
-      <div class="img" style="height:630px;">
+    </a>
+    <h2>Negi</h2>    
+ </div>
+ <div class="div4"> 
+    <a href=Chloe target=“_blank”>
         <img
           src="images/Ogisan.jpeg"
-          width="650"
-          height="580"   
+          width="500"
+          height="800"   
         >
-        </div>
-      
-      <h2>Keisuke</h2>
-      <br>
-      <p>Normal chatactor represent adults</p>   
-      <p>A man who let Hodaka to work and give him a place to live in Tokyo. He escape from home when he was in the age of Hodaka, and met his wife. His wife died because of giving birth to their baby. After his wife died he feels sad and losing the energy for living.He felt that Hodaka and Hina was similar with him and his wife.So he give a lot of help to Hodaka, but when the police came to ask him did he know where's Hodaka.He was afraid so he give Hodaka fifty thousand and tell him to leave. At last moment he decided to help Hodaka again so he fight the police.</p>
-  <br>
-  <div class="row">
-    <div class="card">
-      <div class="img" style="height:630px;">
+    </a>
+    <h2>Keisuke</h2>
+ </div>
+ <div class="div5"> 
+    <a href=Lui target=“_blank”>
         <img
           src="images/Onachan.jpeg"
-          width="650"
-          height="580"   
+          width="500"
+          height="800"   
         >
-        </div>
-      <h2>Natsumi</h2>
-      <br>
-      <p>Normal chatactor represent people who just started to work.</p>
-      <p>A beautiful girl who just graduate from college ,but she don't want to work so soon, she want's to play more so she decided to work part time in her uncle Keisuke's workplace.After he met Hodaka, She soon notice that if she didn't find a job soon she can't earn enough for herself to live. So she started to find a job but it's not as easy as she thoughts. She decided to stop dreaming like a kid ,she help Hodaka to escape from the police as a period of her kids life.</p>
-  <br>
-  <div class="topnav">
-  <a href="index" style="float:right">Back to Menu</a>
-  </div>
-  </body>
-<html>
+    </a>
+    <h2>Natsumi</h2>    
+ </div>
+ <div class="div6"> 
+    <a href=Lui target=“_blank”>
+        <img
+          src="images/gramma.jpg"
+          width="500"
+          height="800"   
+        >
+    </a>
+    <h2>Natsumi</h2>    
+ </div>
+    </body>
+</html>
